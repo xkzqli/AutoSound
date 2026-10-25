@@ -1,0 +1,66 @@
+{
+  "feature_version": "spectral-v1",
+  "usable_recordings": 288,
+  "train_recordings": 216,
+  "test_recordings": 72,
+  "accuracy": 0.6805555555555556,
+  "balanced_accuracy": 0.6743589743589743,
+  "macro_f1": 0.6725925925925926,
+  "majority_baseline_accuracy": 0.3611111111111111,
+  "class_order": [
+    "Engine Issue",
+    "Non engine issue",
+    "Normal engine"
+  ],
+  "confusion_matrix": [
+    [
+      12,
+      2,
+      6
+    ],
+    [
+      3,
+      21,
+      2
+    ],
+    [
+      5,
+      5,
+      16
+    ]
+  ],
+  "classification_report": {
+    "Engine Issue": {
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1-score": 0.6,
+      "support": 20.0
+    },
+    "Non engine issue": {
+      "precision": 0.75,
+      "recall": 0.8076923076923077,
+      "f1-score": 0.7777777777777778,
+      "support": 26.0
+    },
+    "Normal engine": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6153846153846154,
+      "f1-score": 0.64,
+      "support": 26.0
+    },
+    "accuracy": 0.6805555555555556,
+    "macro avg": {
+      "precision": 0.6722222222222222,
+      "recall": 0.6743589743589743,
+      "f1-score": 0.6725925925925926,
+      "support": 72.0
+    },
+    "weighted avg": {
+      "precision": 0.6782407407407407,
+      "recall": 0.6805555555555556,
+      "f1-score": 0.678641975308642,
+      "support": 72.0
+    }
+  },
+  "limitation": "Exploratory recording-level split; vehicle/source identity is unknown. Exact file deduplication does not remove re-encoded copies or clips from the same original recording."
+}

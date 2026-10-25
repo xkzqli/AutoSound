@@ -1,0 +1,38 @@
+[
+  {
+    "path": "data/Audio/Engine Issue/04.mp3",
+    "reason": "Exact duplicate"
+  },
+  {
+    "path": "data/Audio/Engine Issue/25.mp3",
+    "reason": "Exact duplicate"
+  },
+  {
+    "path": "data/Audio/Engine Issue/27.mp3",
+    "reason": "Exact duplicate"
+  },
+  {
+    "path": "data/Audio/Engine Issue/31.mp3",
+    "reason": "Exact duplicate"
+  },
+  {
+    "path": "data/Audio/Engine Issue/ssstik.io_1764467888243.mp3",
+    "reason": "Exact duplicate"
+  },
+  {
+    "path": "data/Audio/Engine Issue/ssstik.io_1764468155609.mp3",
+    "reason": "Recording shorter than 0.25 seconds"
+  },
+  {
+    "path": "data/Audio/Non engine issue/034.mp3",
+    "reason": "Exact duplicate"
+  },
+  {
+    "path": "data/Audio/Non engine issue/1982-chevy-squarebody-fail-start-422887 (2).mp3",
+    "reason": "Exact duplicate"
+  },
+  {
+    "path": "data/Audio/Normal engine/car-engine-start-44357.mp3",
+    "reason": "Exact duplicate"
+  }
+]

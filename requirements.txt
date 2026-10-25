@@ -1,0 +1,10 @@
+numpy==2.5.4
+scipy==1.18.1
+librosa==1.0.0
+soundfile==0.14.0
+scikit-learn==1.9.1
+streamlit==1.66.1
+pandas==3.1.0
+joblib==1.6.0
+torch==2.14.1+cpu
+transformers==4.57.6

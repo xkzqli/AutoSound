@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+.streamlit/secrets.toml
+data/
+models/*
+!models/autosound_v5.joblib
+app_v1_backup.py
+*.log

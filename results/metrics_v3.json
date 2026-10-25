@@ -1,0 +1,116 @@
+{
+  "feature_version": "mfcc-v3",
+  "feature_set": "Combined",
+  "cross_validation": [
+    {
+      "features": "MFCC",
+      "model": "ExtraTrees",
+      "cv_macro_f1": 0.7350141751749661,
+      "fold_scores": [
+        0.7302867383512543,
+        0.7444444444444445,
+        0.6703703703703704,
+        0.7463686096962837,
+        0.7836007130124777
+      ]
+    },
+    {
+      "features": "MFCC",
+      "model": "SVM_C1",
+      "cv_macro_f1": 0.7260148213063288,
+      "fold_scores": [
+        0.6799088934795275,
+        0.7160662844756281,
+        0.6786749482401656,
+        0.7656565656565656,
+        0.789767414679757
+      ]
+    },
+    {
+      "features": "MFCC",
+      "model": "SVM_C10",
+      "cv_macro_f1": 0.7316128165421498,
+      "fold_scores": [
+        0.6590038314176245,
+        0.7417073101166537,
+        0.7333333333333334,
+        0.7649509803921569,
+        0.7590686274509805
+      ]
+    },
+    {
+      "features": "Combined",
+      "model": "ExtraTrees",
+      "cv_macro_f1": 0.7480092815366959,
+      "fold_scores": [
+        0.7087813620071683,
+        0.7444444444444445,
+        0.6927623718795196,
+        0.8104575163398692,
+        0.7836007130124777
+      ]
+    },
+    {
+      "features": "Combined",
+      "model": "SVM_C1",
+      "cv_macro_f1": 0.7039836124118579,
+      "fold_scores": [
+        0.6577380952380952,
+        0.694848871860366,
+        0.6385595081247255,
+        0.7656565656565656,
+        0.7631150211795372
+      ]
+    },
+    {
+      "features": "Combined",
+      "model": "SVM_C10",
+      "cv_macro_f1": 0.7223170724453195,
+      "fold_scores": [
+        0.680729911541925,
+        0.7421915002560163,
+        0.7114676173499702,
+        0.7435064935064934,
+        0.7336898395721926
+      ]
+    }
+  ],
+  "train_recordings": 216,
+  "test_recordings": 72,
+  "accuracy": 0.7361111111111112,
+  "macro_f1": 0.7292302787281266,
+  "classification_report": {
+    "Engine Issue": {
+      "precision": 0.6190476190476191,
+      "recall": 0.65,
+      "f1-score": 0.6341463414634146,
+      "support": 20.0
+    },
+    "Non engine issue": {
+      "precision": 0.8,
+      "recall": 0.7692307692307693,
+      "f1-score": 0.7843137254901961,
+      "support": 26.0
+    },
+    "Normal engine": {
+      "precision": 0.7692307692307693,
+      "recall": 0.7692307692307693,
+      "f1-score": 0.7692307692307693,
+      "support": 26.0
+    },
+    "accuracy": 0.7361111111111112,
+    "macro avg": {
+      "precision": 0.7294261294261295,
+      "recall": 0.7294871794871796,
+      "f1-score": 0.7292302787281266,
+      "support": 72.0
+    },
+    "weighted avg": {
+      "precision": 0.7386243386243386,
+      "recall": 0.7361111111111112,
+      "f1-score": 0.7371539401668527,
+      "support": 72.0
+    }
+  },
+  "limitation": "Exploratory results on a previously inspected test set; source independence and dataset labels remain unverified."
+}

@@ -1,0 +1,67 @@
+{
+  "selected_model": "ExtraTrees",
+  "feature_version": "spectral-v1",
+  "cross_validation": {
+    "ExtraTrees": {
+      "mean_macro_f1": 0.6836817302168179,
+      "std_macro_f1": 0.03770738244740886,
+      "fold_scores": [
+        0.7491658324991658,
+        0.6984126984126985,
+        0.6397556390977444,
+        0.6626984126984127,
+        0.6683760683760683
+      ]
+    },
+    "RandomForest": {
+      "mean_macro_f1": 0.6429395570642926,
+      "std_macro_f1": 0.030885656989522264,
+      "fold_scores": [
+        0.703962703962704,
+        0.6259157509157509,
+        0.6318018898664061,
+        0.6197266785502079,
+        0.6332907620263942
+      ]
+    },
+    "ScaledSVM": {
+      "mean_macro_f1": 0.6318942579845217,
+      "std_macro_f1": 0.06992744787949483,
+      "fold_scores": [
+        0.698125404007757,
+        0.6325549450549451,
+        0.5046151166840822,
+        0.6940170940170939,
+        0.6301587301587301
+      ]
+    }
+  },
+  "train_recordings": 216,
+  "test_recordings": 72,
+  "accuracy": 0.6805555555555556,
+  "balanced_accuracy": 0.6743589743589743,
+  "macro_f1": 0.6725925925925926,
+  "class_order": [
+    "Engine Issue",
+    "Non engine issue",
+    "Normal engine"
+  ],
+  "confusion_matrix": [
+    [
+      12,
+      2,
+      6
+    ],
+    [
+      3,
+      21,
+      2
+    ],
+    [
+      5,
+      5,
+      16
+    ]
+  ],
+  "limitation": "Exploratory comparison on a previously inspected test set. Vehicle/source identity and label provenance remain unverified. Exact deduplication does not exclude near-duplicate recordings."
+}

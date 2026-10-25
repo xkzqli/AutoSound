@@ -1,0 +1,108 @@
+{
+  "model_id": "laion/clap-htsat-unfused",
+  "model_revision": "8fa0f1c6d0433df6e97c127f64b2a1d6c0dcda8a",
+  "feature_version": "clap-10sec-mean-v1",
+  "selected_classifier": "SVM_C1",
+  "cross_validation": {
+    "LogisticRegression": {
+      "mean_macro_f1": 0.7152191234794126,
+      "fold_scores": [
+        0.7429032258064515,
+        0.7188644688644689,
+        0.6746031746031745,
+        0.742511320097527,
+        0.6972134280254414
+      ]
+    },
+    "SVM_C1": {
+      "mean_macro_f1": 0.7924886716093613,
+      "fold_scores": [
+        0.8650505050505051,
+        0.8086903517938001,
+        0.7537277537277537,
+        0.7752525252525252,
+        0.7597222222222223
+      ]
+    },
+    "SVM_C10": {
+      "mean_macro_f1": 0.76370099849217,
+      "fold_scores": [
+        0.8123981753014012,
+        0.7107692307692307,
+        0.7319862155388471,
+        0.8492965367965368,
+        0.714054834054834
+      ]
+    },
+    "ExtraTrees": {
+      "mean_macro_f1": 0.7595786806537314,
+      "fold_scores": [
+        0.7925287356321838,
+        0.7316614420062697,
+        0.7342047930283225,
+        0.7585858585858586,
+        0.7809125740160222
+      ]
+    }
+  },
+  "train_recordings": 216,
+  "test_recordings": 72,
+  "accuracy": 0.7361111111111112,
+  "macro_f1": 0.7211740041928723,
+  "class_order": [
+    "Engine Issue",
+    "Non engine issue",
+    "Normal engine"
+  ],
+  "confusion_matrix": [
+    [
+      11,
+      6,
+      3
+    ],
+    [
+      4,
+      20,
+      2
+    ],
+    [
+      4,
+      0,
+      22
+    ]
+  ],
+  "classification_report": {
+    "Engine Issue": {
+      "precision": 0.5789473684210527,
+      "recall": 0.55,
+      "f1-score": 0.5641025641025641,
+      "support": 20.0
+    },
+    "Non engine issue": {
+      "precision": 0.7692307692307693,
+      "recall": 0.7692307692307693,
+      "f1-score": 0.7692307692307693,
+      "support": 26.0
+    },
+    "Normal engine": {
+      "precision": 0.8148148148148148,
+      "recall": 0.8461538461538461,
+      "f1-score": 0.8301886792452831,
+      "support": 26.0
+    },
+    "accuracy": 0.7361111111111112,
+    "macro avg": {
+      "precision": 0.7209976508222122,
+      "recall": 0.7217948717948719,
+      "f1-score": 0.7211740041928723,
+      "support": 72.0
+    },
+    "weighted avg": {
+      "precision": 0.7328351743556422,
+      "recall": 0.7361111111111112,
+      "f1-score": 0.7342632908670645,
+      "support": 72.0
+    }
+  },
+  "limitation": "Exploratory comparison on a repeatedly inspected test set. Dataset labels, source independence, and overlap with CLAP pretraining data have not been verified."
+}

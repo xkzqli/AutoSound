@@ -1,0 +1,143 @@
+{
+  "selected_candidate": "Fusion_ExtraTrees",
+  "feature_set": "Fusion",
+  "cross_validation": {
+    "V3_ExtraTrees": {
+      "feature_set": "V3",
+      "cv_macro_f1": 0.7480092815366959,
+      "fold_scores": [
+        0.7087813620071683,
+        0.7444444444444445,
+        0.6927623718795196,
+        0.8104575163398692,
+        0.7836007130124777
+      ]
+    },
+    "CLAP_SVM": {
+      "feature_set": "CLAP",
+      "cv_macro_f1": 0.7924886716093613,
+      "fold_scores": [
+        0.8650505050505051,
+        0.8086903517938001,
+        0.7537277537277537,
+        0.7752525252525252,
+        0.7597222222222223
+      ]
+    },
+    "Fusion_ExtraTrees": {
+      "feature_set": "Fusion",
+      "cv_macro_f1": 0.7937247959640045,
+      "fold_scores": [
+        0.8345571047493331,
+        0.7864145658263305,
+        0.8201228878648233,
+        0.7670739348370926,
+        0.7604554865424431
+      ]
+    },
+    "Fusion_SVM_C0.1": {
+      "feature_set": "Fusion",
+      "cv_macro_f1": 0.5896966009682335,
+      "fold_scores": [
+        0.47517793859257274,
+        0.6498839977100846,
+        0.5352916134525331,
+        0.7062937062937062,
+        0.5818357487922706
+      ]
+    },
+    "Fusion_Logistic_C0.1": {
+      "feature_set": "Fusion",
+      "cv_macro_f1": 0.7724265185258365,
+      "fold_scores": [
+        0.8383547008547009,
+        0.7614233841684822,
+        0.6977225672877846,
+        0.8032085561497326,
+        0.7614233841684822
+      ]
+    },
+    "Fusion_SVM_C1.0": {
+      "feature_set": "Fusion",
+      "cv_macro_f1": 0.787599751832296,
+      "fold_scores": [
+        0.8860752688172043,
+        0.754649947753396,
+        0.7125746630390593,
+        0.7982843137254901,
+        0.7864145658263304
+      ]
+    },
+    "Fusion_Logistic_C1.0": {
+      "feature_set": "Fusion",
+      "cv_macro_f1": 0.7461597974461542,
+      "fold_scores": [
+        0.8181818181818182,
+        0.7407215007215008,
+        0.6325925925925926,
+        0.8015810276679841,
+        0.7377220480668756
+      ]
+    },
+    "Fusion_SVM_C10.0": {
+      "feature_set": "Fusion",
+      "cv_macro_f1": 0.7791208910636488,
+      "fold_scores": [
+        0.8402777777777778,
+        0.7782067782067782,
+        0.7445558868708773,
+        0.7978072949609952,
+        0.7347567175018156
+      ]
+    },
+    "Fusion_Logistic_C10.0": {
+      "feature_set": "Fusion",
+      "cv_macro_f1": 0.7267403103190504,
+      "fold_scores": [
+        0.7957641549595573,
+        0.7407215007215008,
+        0.6325925925925926,
+        0.7269012552547256,
+        0.7377220480668756
+      ]
+    }
+  },
+  "accuracy": 0.7638888888888888,
+  "macro_f1": 0.7510025062656641,
+  "train_recordings": 216,
+  "test_recordings": 72,
+  "classification_report": {
+    "Engine Issue": {
+      "precision": 0.6666666666666666,
+      "recall": 0.6,
+      "f1-score": 0.631578947368421,
+      "support": 20.0
+    },
+    "Non engine issue": {
+      "precision": 0.7666666666666667,
+      "recall": 0.8846153846153846,
+      "f1-score": 0.8214285714285714,
+      "support": 26.0
+    },
+    "Normal engine": {
+      "precision": 0.8333333333333334,
+      "recall": 0.7692307692307693,
+      "f1-score": 0.8,
+      "support": 26.0
+    },
+    "accuracy": 0.7638888888888888,
+    "macro avg": {
+      "precision": 0.7555555555555555,
+      "recall": 0.7512820512820513,
+      "f1-score": 0.7510025062656641,
+      "support": 72.0
+    },
+    "weighted avg": {
+      "precision": 0.7629629629629631,
+      "recall": 0.7638888888888888,
+      "f1-score": 0.7609544695071011,
+      "support": 72.0
+    }
+  },
+  "limitation": "Exploratory evaluation after repeated development on the same test set. Source independence, label quality, and pretraining overlap have not been established."
+}
